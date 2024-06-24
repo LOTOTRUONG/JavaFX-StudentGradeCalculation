@@ -7,6 +7,10 @@ module loto.vn.sgcapplication {
     requires org.controlsfx.controls;
     requires java.naming;
     requires lombok;
+    requires org.kordamp.ikonli.core;
+    requires org.kordamp.ikonli.javafx;
+    requires org.kordamp.ikonli.elusive;
+    requires org.kordamp.ikonli.entypo;
 
 
     opens loto.vn.sgcapplication to javafx.fxml;

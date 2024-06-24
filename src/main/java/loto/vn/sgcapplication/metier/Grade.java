@@ -12,6 +12,7 @@ import lombok.Setter;
 public class Grade {
     private Integer idGrade;
     private Float grade;
-    private Inscription idInscription;
-    private GradeCategory idCategory;
+    private Inscription inscription;
+    private Course course;
+    private GradeCategory gradeCategory;
 }

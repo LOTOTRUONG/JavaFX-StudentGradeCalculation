@@ -13,4 +13,8 @@ public class GradeCategory {
     private Integer idCategory;
     private String nameCategory;
     private String description;
+
+    public GradeCategory(Integer idCategory){
+        this.idCategory = idCategory;
+    }
 }

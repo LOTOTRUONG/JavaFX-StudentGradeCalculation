@@ -7,6 +7,7 @@
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.HBox?>
@@ -15,345 +16,451 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<SplitPane dividerPositions="0.12813370473537605" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" orientation="VERTICAL" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loto.vn.sgcapplication.controller.GCSystemController">
-  <items>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="76.0" prefWidth="598.0">
+<BorderPane maxHeight="748.0" maxWidth="1280.0" minHeight="748.0" minWidth="1280.0" prefHeight="748.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loto.vn.sgcapplication.controller.GCSystemController">
+   <top>
+      <fx:include maxHeight="28.0" maxWidth="1280.0" minHeight="28.0" minWidth="1280.0" prefHeight="28.0" prefWidth="1280.0" source="menubar.fxml" BorderPane.alignment="TOP_CENTER" />
+   </top>
+   <center>
+      <VBox maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" styleClass="root" stylesheets="@SGCCss.css" BorderPane.alignment="TOP_CENTER">
          <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="128.0" layoutY="3.0" prefHeight="50.0" prefWidth="598.0" text="Student Grade Calculation" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-               <font>
-                  <Font name="Arial Narrow Bold" size="28.0" />
-               </font>
-            </Label>
-         </children></AnchorPane>
-      <SplitPane dividerPositions="0.65" prefHeight="342.0" prefWidth="598.0">
-         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <AnchorPane maxHeight="76.0" maxWidth="1280.0" minHeight="76.0" minWidth="1280.0" prefHeight="76.0" prefWidth="1280.0">
                <children>
-                  <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="269.0" prefWidth="359.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                    <items>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
-                           <children>
-                              <VBox prefHeight="258.0" prefWidth="769.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="128.0" layoutY="3.0" prefHeight="50.0" prefWidth="598.0" text="Student Grade Calculation" textAlignment="CENTER" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Calibri Bold" size="36.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <SplitPane dividerPositions="0.65" maxHeight="644.0" maxWidth="1280.0" minHeight="644.0" minWidth="1280.0" prefHeight="644.0" prefWidth="1280.0" styleClass="root" stylesheets="@SGCCss.css">
+               <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                     <children>
+                        <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="269.0" prefWidth="359.0" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <items>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                                  <children>
-                                    <Label prefHeight="29.0" prefWidth="760.0" text="Student Information" textAlignment="CENTER" VBox.vgrow="ALWAYS">
-                                       <font>
-                                          <Font name="Arial Narrow Bold" size="24.0" />
-                                       </font>
-                                       <VBox.margin>
-                                          <Insets left="10.0" right="10.0" top="10.0" />
-                                       </VBox.margin>
-                                    </Label>
-                                    <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                    <VBox prefHeight="258.0" prefWidth="769.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                                        <children>
-                                          <GridPane alignment="CENTER" prefHeight="222.0" prefWidth="526.0" HBox.hgrow="ALWAYS">
+                                          <Label prefHeight="29.0" prefWidth="760.0" text="Student Information" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                             <font>
+                                                <Font name="Calibri Bold" size="28.0" />
+                                             </font>
+                                             <VBox.margin>
+                                                <Insets left="10.0" right="10.0" top="10.0" />
+                                             </VBox.margin>
+                                          </Label>
+                                          <HBox prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <GridPane alignment="CENTER" prefHeight="222.0" prefWidth="526.0" HBox.hgrow="ALWAYS">
+                                                  <columnConstraints>
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                   <children>
+                                                      <Label text="Student Name: " textFill="#000000d5">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <ComboBox fx:id="comboboxStudentName" prefHeight="40.0" prefWidth="239.0" GridPane.columnIndex="1" />
+                                                      <Label text="Student ID:  " textFill="#000000d5" GridPane.rowIndex="1">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <TextField fx:id="fieldIDStudent" editable="false" prefHeight="39.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                      <Label text="Academic Year: " textFill="#000000d5" GridPane.rowIndex="2">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <ComboBox fx:id="comboboxYear" prefHeight="40.0" prefWidth="239.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                      <Label text="Course:" textFill="#000000d5" GridPane.rowIndex="3">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <ComboBox fx:id="comboboxCourse" prefHeight="40.0" prefWidth="239.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                      <Label text="Semester:" textFill="#000000d5" GridPane.rowIndex="4">
+                                                         <font>
+                                                            <Font name="Calibri Bold" size="18.0" />
+                                                         </font>
+                                                      </Label>
+                                                      <ComboBox fx:id="comboboxSemester" prefHeight="40.0" prefWidth="239.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                                                   </HBox.margin>
+                                                </GridPane>
+                                                <VBox alignment="CENTER" prefHeight="258.0" prefWidth="294.0" HBox.hgrow="ALWAYS">
+                                                   <children>
+                                                      <Button fx:id="btnCalculate" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="162.0" text="Calculate Grade" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                         <font>
+                                                            <Font name="Arial Narrow" size="18.0" />
+                                                         </font>
+                                                         <VBox.margin>
+                                                            <Insets bottom="30.0" />
+                                                         </VBox.margin>
+                                                      </Button>
+                                                      <Button fx:id="btnReset" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="116.0" text="Reset" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                                                         <font>
+                                                            <Font name="Arial Narrow" size="18.0" />
+                                                         </font>
+                                                      </Button>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets left="20.0" right="20.0" />
+                                                   </HBox.margin>
+                                                </VBox>
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets left="10.0" right="10.0" />
+                                             </VBox.margin>
+                                          </HBox>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                                 <children>
+                                    <VBox prefHeight="258.0" prefWidth="769.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                       <children>
+                                          <Label prefHeight="29.0" prefWidth="760.0" text="Semester Marks" textAlignment="CENTER">
+                                             <font>
+                                                <Font name="Calibri Bold" size="28.0" />
+                                             </font>
+                                          </Label>
+                                          <GridPane prefHeight="258.0" prefWidth="769.0">
                                             <columnConstraints>
-                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="194.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="184.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="50.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="190.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="162.0" />
                                             </columnConstraints>
                                             <rowConstraints>
                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                               <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                             </rowConstraints>
                                              <children>
-                                                <Label text="Student Name: ">
+                                                <Label prefHeight="57.0" prefWidth="183.0" text="No. of attended Classes: (Out of 30)" textFill="#000000d5" wrapText="true" GridPane.rowIndex="1">
                                                    <font>
-                                                      <Font name="Arial Narrow Bold" size="20.0" />
+                                                      <Font name="Calibri Bold" size="18.0" />
                                                    </font>
                                                 </Label>
-                                                <ComboBox fx:id="comboboxStudentName" prefHeight="40.0" prefWidth="239.0" GridPane.columnIndex="1" />
-                                                <Label text="Student ID:  " GridPane.rowIndex="1">
+                                                <TextField fx:id="fieldAttendance" editable="false" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                <Label prefHeight="51.0" prefWidth="183.0" text="Midterm: (Out of 100)" textFill="#000000d5" wrapText="true" GridPane.rowIndex="2">
                                                    <font>
-                                                      <Font name="Arial Narrow Bold" size="18.0" />
+                                                      <Font name="Calibri Bold" size="18.0" />
                                                    </font>
                                                 </Label>
-                                                <TextField fx:id="fieldIDStudent" prefHeight="39.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                                <Label text="Course:" GridPane.rowIndex="2">
+                                                <TextField fx:id="fieldMidterm" editable="false" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                <Label prefHeight="51.0" prefWidth="183.0" text="Final: (Out of 100)" textFill="#000000d5" wrapText="true" GridPane.rowIndex="3">
                                                    <font>
-                                                      <Font name="Arial Narrow Bold" size="18.0" />
+                                                      <Font name="Calibri Bold" size="18.0" />
                                                    </font>
                                                 </Label>
-                                                <ComboBox fx:id="comboboxCourse" prefHeight="40.0" prefWidth="239.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                                <Label text="Semester:" GridPane.rowIndex="3">
+                                                <TextField fx:id="fieldFinal" editable="false" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <Label prefHeight="57.0" prefWidth="183.0" text="Quiz I (Out of 100)" textFill="#000000d5" wrapText="true" GridPane.columnIndex="3">
                                                    <font>
-                                                      <Font name="Arial Narrow Bold" size="18.0" />
+                                                      <Font name="Calibri Bold" size="18.0" />
                                                    </font>
                                                 </Label>
-                                                <ComboBox fx:id="comboboxSemester" prefHeight="40.0" prefWidth="239.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                <TextField fx:id="fieldQuiz1" editable="false" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="4" />
+                                                <Label prefHeight="57.0" prefWidth="183.0" text="Quiz II (Out of 100)" textFill="#000000d5" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldQuiz2" editable="false" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                                <Label prefHeight="57.0" prefWidth="183.0" text="Quiz III (Out of 100)" textFill="#000000d5" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldQuiz3" editable="false" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                                                <Label prefHeight="57.0" prefWidth="183.0" text="Quiz IV (Out of 100)" textFill="#000000d5" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldQuiz4" editable="false" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                                                <Label prefHeight="57.0" prefWidth="183.0" text="Quiz V (Out of 100)" textFill="#000000d5" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                                                   <font>
+                                                      <Font name="Calibri Bold" size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <TextField fx:id="fieldQuiz5" editable="false" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
                                              </children>
-                                             <HBox.margin>
-                                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-                                             </HBox.margin>
-                                          </GridPane>
-                                          <VBox alignment="CENTER" prefHeight="258.0" prefWidth="294.0" HBox.hgrow="ALWAYS">
-                                             <children>
-                                                <Button fx:id="btnShowMark" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="87.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="162.0" text="Show Marks" textAlignment="CENTER">
-                                                   <font>
-                                                      <Font name="Arial Narrow" size="18.0" />
-                                                   </font>
-                                                   <VBox.margin>
-                                                      <Insets bottom="30.0" />
-                                                   </VBox.margin>
-                                                </Button>
-                                                <Button fx:id="btnCalculate" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="162.0" text="Calculate Grade" textAlignment="CENTER" VBox.vgrow="ALWAYS">
-                                                   <font>
-                                                      <Font name="Arial Narrow" size="18.0" />
-                                                   </font>
-                                                   <VBox.margin>
-                                                      <Insets bottom="30.0" />
-                                                   </VBox.margin>
-                                                </Button>
-                                                <Button fx:id="btnReset" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="33.0" prefWidth="116.0" text="Reset" textAlignment="CENTER" VBox.vgrow="ALWAYS">
-                                                   <font>
-                                                      <Font name="Arial Narrow" size="18.0" />
-                                                   </font>
-                                                </Button>
-                                             </children>
-                                             <HBox.margin>
+                                             <padding>
                                                 <Insets left="20.0" right="20.0" />
-                                             </HBox.margin>
-                                          </VBox>
+                                             </padding>
+                                          </GridPane>
                                        </children>
-                                       <VBox.margin>
-                                          <Insets left="10.0" right="10.0" />
-                                       </VBox.margin>
-                                    </HBox>
+                                    </VBox>
                                  </children>
-                              </VBox>
-                           </children>
-                        </AnchorPane>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+                              </AnchorPane>
+                          </items>
+                        </SplitPane>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="623.0" prefWidth="440.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="623.0" prefWidth="760.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="20.0">
                            <children>
-                              <VBox prefHeight="258.0" prefWidth="769.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="10.0">
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="760.0" text="Obtained Marks Per Course" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Calibri Bold" size="28.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label fx:id="labelIDandName" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="24.0" prefHeight="29.0" prefWidth="760.0" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Calibri Bold" size="19.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="241.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="203.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="33.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
                                  <children>
-                                    <Label prefHeight="29.0" prefWidth="760.0" text="Semester Marks" textAlignment="CENTER">
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Acedemic Year: " textAlignment="RIGHT" textFill="#000000d6" wrapText="true">
                                        <font>
-                                          <Font name="Arial Narrow Bold" size="24.0" />
+                                          <Font name="Calibri Bold" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="labelAcademicYear" prefHeight="30.0" prefWidth="213.0" text="N/A" textFill="#000000d6" wrapText="true" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Calibri" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Course: " textAlignment="RIGHT" textFill="#000000d6" wrapText="true" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Calibri Bold" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="labelCourse" prefHeight="30.0" prefWidth="213.0" text="N/A" textFill="#000000d6" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Calibri" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Attendance: " textAlignment="RIGHT" textFill="#000000d6" wrapText="true" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Calibri Bold" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="labelAttendance" prefHeight="30.0" prefWidth="213.0" text="N/A" textFill="#000000d6" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                       <font>
+                                          <Font name="Calibri" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Quiz: " textAlignment="RIGHT" textFill="#000000d6" wrapText="true" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="Calibri Bold" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="labelQuiz" prefHeight="30.0" prefWidth="213.0" text="N/A" textFill="#000000d6" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                       <font>
+                                          <Font name="Calibri" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Midterm: " textAlignment="RIGHT" textFill="#000000d6" wrapText="true" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="Calibri Bold" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="labelMidterm" prefHeight="30.0" prefWidth="213.0" text="N/A" textFill="#000000d6" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                       <font>
+                                          <Font name="Calibri" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Final:" textAlignment="RIGHT" textFill="#000000d6" wrapText="true" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="Calibri Bold" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="labelFinal" prefHeight="30.0" prefWidth="213.0" text="N/A" textFill="#000000d6" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                                       <font>
+                                          <Font name="Calibri" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="labelAverageCourse" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Average:" textAlignment="RIGHT" textFill="#000000d6" wrapText="true" GridPane.rowIndex="8">
+                                       <font>
+                                          <Font name="Calibri Bold" size="17.0" />
                                        </font>
                                     </Label>
-                                    <GridPane prefHeight="258.0" prefWidth="769.0">
-                                      <columnConstraints>
-                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="145.0" />
-                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="209.0" />
-                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="141.0" minWidth="10.0" prefWidth="33.0" />
-                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="142.0" />
-                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="188.0" minWidth="10.0" prefWidth="184.0" />
-                                      </columnConstraints>
-                                      <rowConstraints>
-                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                      </rowConstraints>
-                                       <children>
-                                          <Label prefHeight="57.0" prefWidth="183.0" text="No. of attended Classes: (Out of 30)" wrapText="true" GridPane.rowIndex="1">
-                                             <font>
-                                                <Font name="Arial Narrow Bold" size="16.0" />
-                                             </font>
-                                          </Label>
-                                          <TextField fx:id="fieldAttendance" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                                          <Label prefHeight="51.0" prefWidth="183.0" text="Midterm: (Out of 100)" wrapText="true" GridPane.rowIndex="2">
-                                             <font>
-                                                <Font name="Arial Narrow Bold" size="16.0" />
-                                             </font>
-                                          </Label>
-                                          <TextField fx:id="fieldMidterm" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                                          <Label prefHeight="51.0" prefWidth="183.0" text="Final: (Out of 100)" wrapText="true" GridPane.rowIndex="3">
-                                             <font>
-                                                <Font name="Arial Narrow Bold" size="16.0" />
-                                             </font>
-                                          </Label>
-                                          <TextField fx:id="fieldFinal" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                                          <Label prefHeight="57.0" prefWidth="183.0" text="Quiz I (Out of 100)" wrapText="true" GridPane.columnIndex="3">
-                                             <font>
-                                                <Font name="Arial Narrow Bold" size="16.0" />
-                                             </font>
-                                          </Label>
-                                          <TextField fx:id="fieldQuiz1" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="4" />
-                                          <Label prefHeight="57.0" prefWidth="183.0" text="Quiz II (Out of 100)" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="1">
-                                             <font>
-                                                <Font name="Arial Narrow Bold" size="16.0" />
-                                             </font>
-                                          </Label>
-                                          <TextField fx:id="fieldQuiz2" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
-                                          <Label prefHeight="57.0" prefWidth="183.0" text="Quiz III (Out of 100)" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="2">
-                                             <font>
-                                                <Font name="Arial Narrow Bold" size="16.0" />
-                                             </font>
-                                          </Label>
-                                          <TextField fx:id="fieldQuiz3" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="4" GridPane.rowIndex="2" />
-                                          <Label prefHeight="57.0" prefWidth="183.0" text="Quiz IV (Out of 100)" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="3">
-                                             <font>
-                                                <Font name="Arial Narrow Bold" size="16.0" />
-                                             </font>
-                                          </Label>
-                                          <TextField fx:id="fieldQuiz4" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
-                                          <Label prefHeight="57.0" prefWidth="183.0" text="Quiz V (Out of 100)" wrapText="true" GridPane.columnIndex="3" GridPane.rowIndex="4">
-                                             <font>
-                                                <Font name="Arial Narrow Bold" size="16.0" />
-                                             </font>
-                                          </Label>
-                                          <TextField fx:id="fieldQuiz5" prefHeight="44.0" prefWidth="182.0" GridPane.columnIndex="4" GridPane.rowIndex="4" />
-                                       </children>
-                                    </GridPane>
+                                    <Label fx:id="labelTotalPerCourse" prefHeight="30.0" prefWidth="213.0" text="N/A" textFill="#000000d6" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="8">
+                                       <font>
+                                          <Font name="Calibri" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="labelGradeCourse" alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Grade:" textAlignment="RIGHT" textFill="#000000d6" wrapText="true" GridPane.rowIndex="9">
+                                       <font>
+                                          <Font name="Calibri Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelGradePerCourse" prefHeight="30.0" prefWidth="213.0" text="N/A" textFill="#000000d6" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                                       <font>
+                                          <Font name="Calibri" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Semester:" textAlignment="RIGHT" textFill="#000000d6" wrapText="true" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Calibri Bold" size="17.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="labelSemester" prefHeight="30.0" prefWidth="213.0" text="N/A" textFill="#000000d6" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Calibri" size="17.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
                                  </children>
-                              </VBox>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="20.0" />
+                                 </VBox.margin>
+                              </GridPane>
+                              <Line endX="150.0" startX="-170.0" strokeWidth="2.0">
+                                 <VBox.margin>
+                                    <Insets left="50.0" right="50.0" />
+                                 </VBox.margin>
+                              </Line>
+                              <Button fx:id="btnCalculateFinal" mnemonicParsing="false" prefHeight="40.0" prefWidth="163.0" text="Calculate Final Grade">
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" top="30.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Button>
+                              <GridPane>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="267.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="217.0" minWidth="10.0" prefWidth="204.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="27.0" prefWidth="257.0" text="Average of Year: " textAlignment="RIGHT" wrapText="true">
+                                       <font>
+                                          <Font name="Calibri Bold" size="22.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="labelTotal" prefHeight="30.0" prefWidth="213.0" text="N/A" wrapText="true" GridPane.columnIndex="1">
+                                       <font>
+                                          <Font name="Calibri Bold" size="22.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="28.0" prefWidth="265.0" text="GRADE:" textAlignment="RIGHT" wrapText="true" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Calibri Bold" size="22.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label fx:id="labelGrade" prefHeight="30.0" prefWidth="213.0" text="N/A" textAlignment="RIGHT" textFill="RED" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Calibri Bold" size="22.0" />
+                                       </font>
+                                       <GridPane.margin>
+                                          <Insets left="20.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="40.0" top="20.0" />
+                                 </VBox.margin>
+                              </GridPane>
                            </children>
-                        </AnchorPane>
-                    </items>
-                  </SplitPane>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="623.0" prefWidth="440.0">
-               <children>
-                  <VBox prefHeight="623.0" prefWidth="760.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
-                     <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="760.0" text="Obtained Marks" textAlignment="CENTER">
-                           <font>
-                              <Font name="Arial Narrow Bold" size="24.0" />
-                           </font>
-                           <VBox.margin>
-                              <Insets top="50.0" />
-                           </VBox.margin>
-                        </Label>
-                        <GridPane>
-                          <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                          </columnConstraints>
-                          <rowConstraints>
-                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                          </rowConstraints>
-                           <children>
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Attendance: " textAlignment="RIGHT" wrapText="true">
-                                 <font>
-                                    <Font name="Arial Narrow Bold" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets right="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Quiz: " textAlignment="RIGHT" wrapText="true" GridPane.rowIndex="1">
-                                 <font>
-                                    <Font name="Arial Narrow Bold" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets right="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Midterm: " textAlignment="RIGHT" wrapText="true" GridPane.rowIndex="2">
-                                 <font>
-                                    <Font name="Arial Narrow Bold" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets right="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Final:" textAlignment="RIGHT" wrapText="true" GridPane.rowIndex="3">
-                                 <font>
-                                    <Font name="Arial Narrow Bold" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets right="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label fx:id="labelAttendance" prefHeight="30.0" prefWidth="213.0" text="86.7/100" wrapText="true" GridPane.columnIndex="1">
-                                 <font>
-                                    <Font name="Arial Narrow" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets left="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label fx:id="labelQuiz" prefHeight="30.0" prefWidth="213.0" text="65/100" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                                 <font>
-                                    <Font name="Arial Narrow" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets left="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label fx:id="labelMidterm" prefHeight="30.0" prefWidth="213.0" text="75/100" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                                 <font>
-                                    <Font name="Arial Narrow" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets left="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label fx:id="labelFinal" prefHeight="30.0" prefWidth="213.0" text="100/100" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="3">
-                                 <font>
-                                    <Font name="Arial Narrow" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets left="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                           </children>
-                           <VBox.margin>
-                              <Insets bottom="40.0" top="40.0" />
-                           </VBox.margin>
-                        </GridPane>
-                        <Line endX="150.0" startX="-170.0" strokeWidth="2.0">
-                           <VBox.margin>
-                              <Insets left="50.0" right="50.0" />
-                           </VBox.margin>
-                        </Line>
-                        <GridPane>
-                           <columnConstraints>
-                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                           </columnConstraints>
-                           <rowConstraints>
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                           </rowConstraints>
-                           <children>
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="Total" textAlignment="RIGHT" wrapText="true">
-                                 <font>
-                                    <Font name="Arial Narrow Bold" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets right="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label fx:id="labelTotal" prefHeight="30.0" prefWidth="213.0" text="326.7/400" wrapText="true" GridPane.columnIndex="1">
-                                 <font>
-                                    <Font name="Arial Narrow" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets left="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                              <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" prefHeight="30.0" prefWidth="213.0" text="GRADE:" textAlignment="RIGHT" wrapText="true" GridPane.rowIndex="2">
-                                 <font>
-                                    <Font name="Arial Narrow Bold" size="16.0" />
-                                 </font>
-                              </Label>
-                              <Label fx:id="labelGrade" prefHeight="30.0" prefWidth="213.0" text="A+" textAlignment="RIGHT" textFill="RED" wrapText="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                                 <font>
-                                    <Font name="Arial Narrow Bold" size="16.0" />
-                                 </font>
-                                 <GridPane.margin>
-                                    <Insets left="20.0" />
-                                 </GridPane.margin>
-                              </Label>
-                           </children>
-                           <VBox.margin>
-                              <Insets bottom="40.0" top="40.0" />
-                           </VBox.margin>
-                        </GridPane>
+                        </VBox>
                      </children>
-                  </VBox>
-               </children>
-            </AnchorPane>
-         </items>
-      </SplitPane>
-  </items>
-</SplitPane>
+                  </AnchorPane>
+               </items>
+            </SplitPane>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

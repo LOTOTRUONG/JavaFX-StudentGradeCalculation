@@ -21,11 +21,14 @@ public class Course {
         this.nameCourse = nameCourse;
     }
 
+    public Course(Integer idCourse){
+        this.idCourse = idCourse;
+    }
+
     public Course(Integer idCourse, String nameCourse){
         this.idCourse = idCourse;
         this.nameCourse = nameCourse;
     }
-
     @Override
     public String toString() {
         return nameCourse;
