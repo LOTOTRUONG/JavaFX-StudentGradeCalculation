@@ -1,7 +1,7 @@
 .root {
     -fx-background-color:
-            linear-gradient(from 930px 00px to 00px 00px, #e5f8f8, #235260),
-            linear-gradient(from 30px 900px to 00px 00px, #235260, #e5f8f8);
+            linear-gradient(from 1080px 00px to 00px 00px, rgba(229, 248, 248, 0.63), rgba(173, 222, 238, 0.66)),
+            linear-gradient(from 00px 900px to 00px 00px, rgba(173, 222, 238, 0.7), rgba(229, 248, 248, 0.7));
     -fx-background-radius: 2px;
 }
 
@@ -29,6 +29,23 @@
 
 .button {
     -fx-background-radius: 10px;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri";
+    -fx-background-color:
+            linear-gradient(from 10px 0px to 20px 100px, #e5f8f8, #235260),
+            linear-gradient(from 0px 0px to 10px 30px, #235260, #e5f8f8)
+
+}
+
+.button:hover {
+    -fx-background-color:
+            linear-gradient(from 0px 0px to 10px 30px, #e5f8f8, #235260),
+            linear-gradient(from 0px 0px to 10px 50px, #235260, #e5f8f8)
+}
+
+.button2 {
+    -fx-background-radius: 10px;
     -fx-font-size: 25px;
     -fx-font-weight: bold;
     -fx-font-family: "Calibri";
@@ -38,7 +55,7 @@
 
 }
 
-.button:hover {
+.button2:hover {
     -fx-background-color:
             linear-gradient(from 0px 0px to 00px 40px, #e5f8f8, #235260),
             linear-gradient(from 0px 0px to 10px 30px, #235260, #e5f8f8)
@@ -56,6 +73,29 @@
 }
 .menu-bar:hover {
     -fx-background-color:
-            linear-gradient(from 0px 0px to 0px 60px, #e5f8f8, #235260),
-            linear-gradient(from 0px 0px to 0px 60px, #235260, #e5f8f8);
+            linear-gradient(from 0px 0px to 0px 60px, #e5f8f8, #98d4e7),
+            linear-gradient(from 0px 0px to 0px 60px, #98d4e7, #e5f8f8);
+}
+
+.split-pane:horizontal > * > .split-pane-divider {
+    -fx-border-color: transparent -fx-box-border transparent #BBBBBB;
+    -fx-background-color: transparent, -fx-inner-border-horizontal;
+    -fx-background-insets: 0, 0 1 0 1;
+}
+
+/* vertical the two nodes are placed on top of each other. */
+.split-pane:vertical > * > .split-pane-divider {
+    -fx-border-color:  #BBBBBB transparent -fx-box-border transparent;
+    -fx-background-color: transparent, -fx-inner-border;
+    -fx-background-insets: 0, 1 0 1 0;
+}
+.label1{
+    -fx-font-family: Calibri;
+    -fx-font-size: 14px;
+}
+.label1:hover{
+    -fx-font-weight: bold;
+    -fx-background-color: #99c1d2;
+    -fx-text-fill: white;
+    -fx-padding: 0.5em 0.5em;
 }

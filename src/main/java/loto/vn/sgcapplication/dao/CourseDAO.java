@@ -2,7 +2,9 @@ package loto.vn.sgcapplication.dao;
 
 import loto.vn.sgcapplication.metier.Course;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
@@ -16,11 +18,14 @@ public class CourseDAO extends DAO <Course, Course, Integer> {
     @Override
     public ArrayList<Course> getAll() {
         ArrayList<Course> listCourse = new ArrayList<>();
-        String sqlRequest = "SELECT ID_Course, Name_Course FROM COURSE";
+        String sqlRequest = "SELECT * FROM COURSE";
         try(Statement statement = connection.createStatement()) {
             ResultSet resultSet = statement.executeQuery(sqlRequest);
             while (resultSet.next()) {
-                listCourse.add(new Course(resultSet.getInt(1),resultSet.getString(2)));
+                Integer idCourse = resultSet.getInt("ID_Course");
+                String nameCourse = resultSet.getString("Name_Course");
+                Course course = new Course(idCourse, nameCourse);
+                listCourse.add(course);
             } resultSet.close();
         } catch (Exception e) {
             e.printStackTrace();
@@ -36,7 +41,16 @@ public class CourseDAO extends DAO <Course, Course, Integer> {
 
     @Override
     public boolean insert(Course object) {
-        return false;
+        String sqlRequest = "INSERT INTO COURSE(Name_Course, Credits) VALUES (?,?)";
+        try (PreparedStatement preparedStatement = connection.prepareStatement(sqlRequest)) {
+            preparedStatement.setString(1, object.getNameCourse());
+            preparedStatement.setInt(2, object.getCredits());
+            preparedStatement.executeUpdate();
+            return true;
+        } catch (SQLException e){
+            e.printStackTrace();
+            return false;
+        }
     }
 
     @Override
