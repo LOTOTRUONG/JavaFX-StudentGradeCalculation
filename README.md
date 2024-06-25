@@ -19,6 +19,9 @@ Display Results: Show the total marks, average percentage, and the corresponding
 ![Docker](https://img.shields.io/badge/Docker-Docker?logo=docker&logoColor=white&labelColor=%232496ED&color=ffffff)
 ![MSSQL Server](https://img.shields.io/badge/MSSQLServer-MSSQLServer?logo=microsoftsqlserver&logoColor=white&labelColor=%23CC2927&color=ffffff)
 
+:floppy_disk: DATABASE: loantruong181/sgc_application:v1
+username: sa
+password: loan@123456
 
 ## :heart_eyes: Demo
 
