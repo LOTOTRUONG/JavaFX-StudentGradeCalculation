@@ -20,7 +20,9 @@ Display Results: Show the total marks, average percentage, and the corresponding
 ![MSSQL Server](https://img.shields.io/badge/MSSQLServer-MSSQLServer?logo=microsoftsqlserver&logoColor=white&labelColor=%23CC2927&color=ffffff)
 
 :floppy_disk: DATABASE: loantruong181/sgc_application:v1
+
 username: sa
+
 password: loan@123456
 
 ## :heart_eyes: Demo
