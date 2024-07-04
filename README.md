@@ -2,7 +2,6 @@
 Branch: master
 
 ## :orange_book: Description de projet
-Encryptix Internship Program
 
 TASK 2: STUDENT GRADE CALCULATOR
 
